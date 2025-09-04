@@ -82,7 +82,7 @@ export default function ContactPage() {
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Thank You!</h2>
               <p className="text-gray-600 mb-6">
-                Your message has been sent. We'll get back to you within 24 hours.
+                Your message has been sent. We&apos;ll get back to you within 24 hours.
               </p>
               <button
                 onClick={() => setIsSubmitted(false)}
@@ -115,7 +115,7 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Ready to transform your emissions monitoring? Contact our team to learn more about ProxGrid's 
+              Ready to transform your emissions monitoring? Contact our team to learn more about ProxGrid&apos;s 
               advanced sensor technology and how we can help your operations.
             </p>
           </div>
@@ -129,10 +129,10 @@ export default function ContactPage() {
               <div className="space-y-8">
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                    Let's Start a Conversation
+                    Let&apos;s Start a Conversation
                   </h2>
                   <p className="text-lg text-gray-600 mb-8">
-                    Whether you're interested in a demo, have technical questions, or want to discuss 
+                    Whether you&apos;re interested in a demo, have technical questions, or want to discuss 
                     custom solutions for your facility, our team is here to help.
                   </p>
                 </div>
@@ -184,7 +184,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-gray-900 mb-2">Quick Response Guarantee</h3>
                   <p className="text-gray-600 text-sm">
                     We typically respond to all inquiries within 24 hours. For urgent matters, 
-                    please mention "URGENT" in your message subject.
+                    please mention &quot;URGENT&quot; in your message subject.
                   </p>
                 </div>
               </div>

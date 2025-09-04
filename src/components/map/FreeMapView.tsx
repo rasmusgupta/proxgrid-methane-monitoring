@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from 'react';
+import Image from 'next/image';
 
 interface FreeMapViewRef {
   searchLocation: (query: string) => Promise<void>;
@@ -164,12 +165,15 @@ const FreeMapView = forwardRef<FreeMapViewRef>((props, ref) => {
             {/* Tile Layer */}
             <div className="absolute inset-0 flex items-center justify-center">
               {tiles.map(tile => (
-                <img
+                <Image
                   key={tile.key}
                   src={`https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${tile.zoom}/${tile.y}/${tile.x}`}
                   alt={`Map tile ${tile.x},${tile.y}`}
-                  className="absolute w-64 h-64 object-cover"
+                  className="absolute object-cover"
                   style={tile.style}
+                  width={256}
+                  height={256}
+                  unoptimized
                   onError={(e) => {
                     // Fallback to OpenStreetMap if Esri fails
                     const img = e.target as HTMLImageElement;

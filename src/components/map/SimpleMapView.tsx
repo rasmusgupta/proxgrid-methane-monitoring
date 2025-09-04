@@ -65,8 +65,8 @@ const SimpleMapView = forwardRef<SimpleMapViewRef>((props, ref) => {
       
       const geocoder = new window.google.maps.Geocoder();
       
-      return new Promise((resolve, reject) => {
-        geocoder.geocode({ address: query }, (results, status) => {
+      return new Promise<void>((resolve, reject) => {
+        geocoder.geocode({ address: query }, (results: google.maps.GeocoderResult[] | null, status: google.maps.GeocoderStatus) => {
           if (status === 'OK' && results && results.length > 0) {
             const location = results[0].geometry.location;
             map.setCenter(location);
@@ -104,8 +104,8 @@ const SimpleMapView = forwardRef<SimpleMapViewRef>((props, ref) => {
               <ol className="text-gray-300 text-sm space-y-2 list-decimal list-inside">
                 <li>Go to <a href="https://console.cloud.google.com/" target="_blank" className="text-blue-400 underline">Google Cloud Console</a></li>
                 <li>Select your project or create a new one</li>
-                <li>Navigate to "APIs & Services" → "Library"</li>
-                <li>Search for and enable "Maps JavaScript API"</li>
+                <li>Navigate to &quot;APIs &amp; Services&quot; → &quot;Library&quot;</li>
+                <li>Search for and enable &quot;Maps JavaScript API&quot;</li>
                 <li>Refresh this page</li>
               </ol>
               <div className="bg-gray-800/50 p-3 rounded border-l-4 border-yellow-400">

@@ -1,0 +1,59 @@
+[15:09:12.262] Running build in Washington, D.C., USA (East) – iad1
+[15:09:12.263] Build machine configuration: 2 cores, 8 GB
+[15:09:12.277] Cloning github.com/rasmusgupta/proxgrid-methane-monitoring (Branch: master, Commit: 39f7732)
+[15:09:12.433] Previous build caches not available
+[15:09:12.961] Cloning completed: 684.000ms
+[15:09:13.283] Running "vercel build"
+[15:09:13.682] Vercel CLI 47.0.4
+[15:09:14.600] Installing dependencies...
+[15:09:18.795] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[15:09:19.146] npm warn deprecated google-p12-pem@3.1.4: Package is no longer maintained
+[15:09:20.994] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[15:09:31.322] 
+[15:09:31.322] added 740 packages in 16s
+[15:09:31.322] 
+[15:09:31.322] 187 packages are looking for funding
+[15:09:31.322]   run `npm fund` for details
+[15:09:31.681] Detected Next.js version: 15.5.2
+[15:09:31.688] Running "npm run build"
+[15:09:31.807] 
+[15:09:31.808] > proxgrid_methane@1.0.0 build
+[15:09:31.808] > next build
+[15:09:31.808] 
+[15:09:32.905] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[15:09:32.906] This information is used to shape Next.js' roadmap and prioritize features.
+[15:09:32.906] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[15:09:32.907] https://nextjs.org/telemetry
+[15:09:32.907] 
+[15:09:33.033]    ▲ Next.js 15.5.2
+[15:09:33.033] 
+[15:09:33.298]    Creating an optimized production build ...
+[15:09:42.492] 
+[15:09:42.493] 
+[15:09:42.493] Retrying 1/3...
+[15:09:45.394]  ✓ Compiled successfully in 9.3s
+[15:09:45.399]    Linting and checking validity of types ...
+[15:09:49.301] 
+[15:09:49.302] Failed to compile.
+[15:09:49.302] 
+[15:09:49.302] ./src/app/contact/page.tsx
+[15:09:49.302] 85:47  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+[15:09:49.303] 118:106  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+[15:09:49.303] 132:24  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+[15:09:49.303] 135:32  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+[15:09:49.303] 187:36  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.303] 187:43  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.303] 
+[15:09:49.303] ./src/components/map/FreeMapView.tsx
+[15:09:49.304] 167:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[15:09:49.304] 
+[15:09:49.304] ./src/components/map/SimpleMapView.tsx
+[15:09:49.304] 107:33  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.304] 107:49  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.304] 107:53  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.304] 107:61  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.304] 108:43  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.304] 108:63  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[15:09:49.305] 
+[15:09:49.305] info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+[15:09:49.337] Error: Command "npm run build" exited with 1
